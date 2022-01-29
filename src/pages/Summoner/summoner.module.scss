@@ -1,0 +1,237 @@
+
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin: auto;
+}
+
+.notFound{
+  text-align: center;
+    font-family: 'Blackhead';
+    margin-top:50px;
+}
+a{
+  text-decoration: none;
+}
+
+.navSearch{
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 20px;
+  
+  
+  h1{
+    color: #2BE5AE;
+    font-size: 2.7rem;
+    text-align: center;
+    font-family: 'Blackhead';
+
+    span{
+      color: #000;
+    }
+  }
+
+  .searchContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    label{
+      border: 1px solid #000;
+      
+      padding: 0.65rem;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+  
+      img{
+        position: static;
+        width: 20px;
+        margin-right: 8px;
+      }
+    }
+    input{
+      width: 300px;
+      border: none;
+      outline: none;
+      cursor: text;
+      &::before{
+        content: "";
+        background-image:url('/assets/search-icon.svg'); 
+      }
+      &::placeholder{
+        color: #898989;
+        
+      }
+    }
+    a{
+      text-decoration: none;
+    }
+    button{
+      border: none;
+      
+      padding: 0.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #2BE5AE;
+      color: #ffff;
+      width: 100px;
+      cursor: pointer;
+      font-family: "Roboto";
+      
+      transition: all .2s ease-in;
+      &:hover{
+        background: #1ABD8D;
+  
+      }
+    }
+  }
+}
+
+.summonerData{
+  width: 90%;
+  margin: auto;
+  display: grid;
+  align-content: center;
+  grid-template-columns: 40% 40%;
+  gap: 20%;
+  border: 1px solid #e5e5e5;
+  padding: 50px;
+  margin-top: 50px;
+  img{
+    position: static;
+  }
+  .summonerInfo{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+
+    div{
+      position:relative;
+      .levelContainer{
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 80px;
+        background-image: url('/assets/level.svg');
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        background-size:contain;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p{
+          position: absolute;
+          bottom: -2px;
+          transform: translateY(-50%);
+          font-family: 'Roboto';
+          font-size: 1rem;
+          color: #2BE5AE;
+        }
+      }
+    }
+
+
+    .winRate{
+      
+      border: 2px solid #2BE5AE;
+      border-radius: 50%;
+      margin-top: 5px;
+      width: 90px;
+      height: 90px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      p{
+        font-size: 0.8rem
+      }
+    }
+
+    strong,p{
+      font-family: 'Roboto';
+      text-align: center;
+    }
+    
+    img{
+      width: 140px;
+      border: 4px solid #2BE5AE;
+    }
+  }
+  .summonerTopChampions{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    strong{
+      font-family: 'Roboto';
+      text-align: center;
+    }
+
+    div{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+      border: 2px solid #e5e5e5;
+      padding: 0.6rem;
+      img{
+        width: 50px;
+        border-radius: 50px;
+      }
+    }
+  }
+}
+
+
+.rankedData{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  .soloDuo, .flex{
+    div{
+      display: flex;
+      align-items: center;
+      
+      div{
+        display: flex;
+        flex-direction: column;
+
+      }
+    }
+  }
+
+  .soloDuo, .flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #e5e5e5;
+    padding: 1.2rem;
+    img{
+      width: 90px;
+    }
+
+    strong{
+      font-family: 'Roboto';
+      text-align: left;
+    }
+
+    p{
+      font-family: 'Roboto';
+      font-size: 0.8rem;
+      text-align: left;
+    }
+  }
+}
